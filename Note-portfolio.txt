@@ -1,0 +1,48 @@
+
+Start  time : 17-10-2020
+Content name: portfolio
+
+
+
+
+
+Include:
+
+1. Bootstrap 4.3.5
+2. Fontawsome 
+3. Animation
+4. jquery-3.5.1
+
+
+Image Collection from
+01. https://undraw.co/illustrations
+
+
+Target:
+1. Parallax
+
+
+Mian Page
+menu
+slide
+card view/service
+
+client
+contact
+footer
+sub footer
+
+
+Page:
+01. index.html
+02. about
+03. gallery
+04. blog
+	1.recent Work
+	2. Complete Project
+	3. Running project
+	4. 
+05.contact
+06.client
+07.FAQ
+08.Blog Show option like COCO website

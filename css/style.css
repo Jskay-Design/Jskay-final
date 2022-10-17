@@ -1,0 +1,789 @@
+
+/*
+Custom design Note
+custom code arrang by section wise
+section > 
+About/welcome, 
+Service, 
+Portfolio, 
+Pricing, 
+Blog, 
+Contact, 
+Footer
+
+
+**/
+
+/* Default code for main index page arrange */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  word-wrap: break-word;
+}
+
+body {
+  color: #000;
+  line-height: 1.3;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden !important;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.8;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+span, a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {     /* all link hover effect*/
+  color: inherit;
+  text-decoration: none;
+}
+/* header image/ benar custom css.  */
+.header{
+    margin-top: 10px;
+}
+.header img{
+    height: 80px;
+    width: 100%;
+}
+/* All  parallax img section css is start. if parallax section increase then xtra class add next
+*********************************************/
+.parallax{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: big john;
+    width: 100%;
+    height: 50vh;
+
+}
+.one{
+    background-image: url(../img/parallax-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+/* menu Brand name custom css */
+.navbar-brand{
+  font-family: 'Suez One', serif;
+      font-size: 2rem;
+}
+
+/* Welcome section css is start here
+**************************************************************************************/
+#welcome{
+    padding: 20px;
+    background: #F7F7F7; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#welcome p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-align: justify;
+    font-variant: normal;
+    background-color: #F7F7F7;
+}
+
+/* Hover underline middile to Bothside start
+============================================ */
+.text-underline{
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 15px;
+}
+.middle-both{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:40px;
+    text-decoration: none;
+    position: relative;
+}
+.middle-both::after{
+    content: '';
+    width: 0%;
+    height: 10%;
+    background-color: #70dd80;
+    position: absolute;
+    bottom: -10px;
+    left:50%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+.middle-both:hover::after{
+   left:0%;
+    width: 100%;
+}
+/* Hover underline middile to Bothside end
+============================================ */
+
+ /********************************** service section start
+ ********************************************************************************/
+
+.services-section{
+  /* background-image: url(../img/bg.jpg); */
+  background-size: cover;
+  padding: 60px 0;
+  background-repeat: no-repeat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.two{
+    background-image: url(../img/parallax/parallax3.jpg);   /* For Parallax background*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #82ccdd;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #82ccdd;
+  color: #82ccdd;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #70dd80;
+  color: #fff;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
+}
+ /********************************** service section end
+ ********************************************************************************/
+              
+ 
+ /* Filter section code is filter.css file */
+  /* process section start */
+
+  .three{
+    background-image: url(../img/parallax/parallax2.jpg);   /* For Parallax background*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    color: #fff;
+}
+.process{
+  padding-bottom: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.process h3{ 
+ background-color:#eee ;
+ color: #000;
+ text-align: center;
+  
+}
+
+.process-left p{
+  color: #000;
+  text-align: justify;
+  background-color: #ccc;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.process-left span{
+  color: #000;
+  font-weight: bold;
+  background-color: #ccc;
+}
+
+.process-right p{
+  color: #000;
+  text-align: justify;
+  background-color: #ccc;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.process-right span{
+  color: #000;
+  font-weight: bold;
+  background-color: #ccc;
+}
+  /*--========================== pricing section start==================================== --*/
+#pricing-body{
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding-bottom: 40px;
+}
+.pricing-table{
+  margin: 15px; 
+  background-color: #fff;
+  border-radius: 5px;
+
+}
+.pricing-table:hover{
+  background-color:  #eee; 
+  box-shadow: 0px 5px 10px 3px  #70dd80;
+}
+.section-title {
+  margin-bottom: 50px;
+}
+.section-title h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  color: #141f4e;
+}
+.card-header{
+  background: #70dd80;
+  text-align: center;
+  height: 80px;
+  text-transform: uppercase;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px ;
+}
+.title{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%,50%);
+  width: 75%;
+  padding: 8px 0;
+  color: #fff;
+  background:#3498db;
+}
+.title span{
+ font-weight: bold;
+ font-size: 20px;
+
+}
+.card-body{
+  margin-top: 20px;
+}
+.card-body ul li{
+  list-style: none;
+  line-height: 25px;
+}
+.card-body i{
+  padding-right: 10px;
+}
+.card-body .fa-check{
+  color: green;
+}
+.card-body .fa-times{
+  color: red;
+}
+.border{
+  width: 80%;
+  height: 1px;
+  background: #ddd;
+  margin: auto;
+}
+.pricing-table a{
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  border: 1px solid;
+  max-width: 360px;
+  transition: .2s linear;
+  text-decoration: none; 
+  text-transform: uppercase;
+}
+.pricing-table a:hover{
+  border-radius: 30px;
+}
+.table1 a{
+  color: #2980b9;
+ 
+}
+.table1 a:hover{
+  background:  #70dd80;
+  color: #fff;
+}
+/* ************************for popular card ***********************/
+
+.card-ribbon {
+            position: absolute;
+            overflow: hidden;
+            top: 5px;
+            left: -5px;
+            width: 120px;
+            height: 100px;
+        }
+        
+        .card-ribbon span {
+            position: absolute;
+            display: block;
+            width: 120px;
+            padding: 10px 0;
+            background-color: #3498db;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 13px;
+            text-transform: uppercase;
+            text-align: center;
+            top: 15px;
+            left: -15px;
+            transform: rotate(-45deg);
+        }
+        
+        .card-ribbon::before,
+        .card-ribbon::after {
+            position: absolute;
+            z-index: -1;
+            content: '';
+            display: block;
+            border: 5px solid #2980b9;
+            border-top-color: transparent;
+            border-left-color: transparent;
+        }
+        
+        .card-ribbon::before {
+            top: 0;
+            right: 0;
+        }
+        
+        .card-ribbon::after {
+            bottom: 0;
+            left: 0;
+        }
+/*==============pricing section end==========================*/
+
+/* ---------   [  Start Blog ]-----------------------------------*/
+.section-padding {
+  padding: 40px 0;
+}
+.section-head {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+[data-overlay-color] .section-head p {
+  color: #ccc;
+}
+[data-overlay-color].process .icon {
+  color: #fff !important;
+}
+
+.blog .item {
+  -webkit-box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+}
+.blog .item .post-img {
+  overflow: hidden;
+}
+.blog .item .post-img:hover .img {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.blog .item .post-img .img {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+.blog .item .cont {
+  padding: 30px 0 15px;
+}
+.blog .item .cont h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.blog .item .info {
+  font-size: 10px;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.blog .item .info a {
+  margin-right: 10px;
+}
+.blog .item .info a:last-child {
+  margin-right: 0;
+}
+.blog .item .info .tag {
+  padding: 4px;
+  background-color: #1A237E;
+  color: #fff;
+  float: right;
+  line-height: 1;
+}
+.blog .item .more {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.blog .item .more:hover {
+  color: #1A237E;
+}
+.blog .item .more:hover i {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.blog .item .more i {
+  font-size: 10px;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+  opacity: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* ------------[ End Blog ]-----------------------------*/
+
+
+  /* about team section custom start======================================= */
+  #box{
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #f8f8f8;
+}
+#box p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.single_box{
+	height: 400px;
+	background: #000;
+	overflow: hidden;
+	border-radius: 10px;
+	transition: .6s;
+	position: relative;
+}
+.single_box .img_box
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.6s;
+	width: 100%;
+	height: 100%;	
+}
+.single_box .img_box img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.single_box:hover .img_box {
+	opacity: 0.5;
+}
+.single_box .content_box{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	bottom: -100%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	transition: 0.6s;
+	color: white;	
+}
+.single_box .content_box p{
+  color: #000;
+
+}
+.single_box:hover .content_box{
+	bottom: 0px;
+}
+.single_box .content_box h1{
+	margin: 0px;
+}
+.single_box .content_box h4{
+	margin: 0px;
+	color: #0be6ee;
+}
+.single_box .content_box h4:hover{
+	color: black;
+}
+.single_box .content_box p{
+	font-size: 12px;
+}
+.single_box .content_box .social ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	align-items: center;
+}
+.single_box .content_box .social ul li a{
+	padding:0 10px;
+	color: white;
+	font-size: 16px;
+}
+.single_box .content_box .social ul li a:hover{
+	color: cyan;
+}
+#box .box_single:nth-child(1) .content_box{
+	background: linear-gradient(0deg, #c21833, transparent);
+}
+#box .box_single:nth-child(2) .content_box{
+	background: linear-gradient(0deg, #c4ee08, transparent);
+}
+#box .box_single:nth-child(3) .content_box{
+	background: linear-gradient(0deg, #c21833, transparent);
+}
+#box .box_single:nth-child(4) .content_box{
+	background: linear-gradient(0deg, #08a3eb, transparent);
+}
+ /* About team section custom end=============================================== */
+
+ /* contact form section start========================== */
+   .four{
+    background-image: url(../img/map.jpg);   /* For Parallax background*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 40px;
+}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  opacity: 0.5;
+}
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  opacity: 0.5;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+ 
+/* contact form sention end================================== */
+
+/* footer section css
+**********************************************************************************************/
+/* Hover underline Left to right start
+======================================== */
+.text-underline{
+    text-align: center;
+}
+.left-right{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.left-right::after{
+    content: '';
+    width: 0%;
+    height: 10%;
+    background-color: #70dd80;
+    position: absolute;
+    bottom: -10px;
+    left:0;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+.left-right:hover::after{
+    left:0%;
+    width: 100%;
+}
+/* Hover underline Left to right end
+==================================== */
+
+#footer{
+    background: rgb(36, 29, 29);
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.border-footer{
+  border-left: 5px solid yellow;
+  padding-top: 10px;
+}
+#footer a{
+    text-decoration: none;
+}
+.footer_left p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: oblique;
+    color: #fff;
+    padding: 10px;
+}
+.footer_left .fas .far{
+    margin-right: 10px;
+}
+.footer_left ul{
+    list-style-type:none;
+    font-style: initial;
+    line-height: 25px;
+}
+.footer_middle ul{
+    list-style-type:none;
+    line-height: 22px;
+}
+.footer_middle ul a:hover{
+    color: rgb(6, 176, 206);
+}
+.footer_middle .fas{
+    margin-right: 10px;
+}
+.footer_right .fas{
+  margin-right: 10px;
+}
+.footer_right ul{
+    list-style-type:none;
+    line-height: 22px;
+}
+.footer_right ul a:hover{
+    color: rgb(6, 176, 206);
+}
+.footer_right2 ul li{
+  list-style-type:none;
+  float: left;
+  margin: 7px;
+  font-size: 16px;
+}
+.footer_right2 ul li a:hover{
+  color: #3498db;
+}
+.footer_right2 .fa-facebook-square{
+  color: #3498db;
+  font-size: 20px;
+}
+.footer_right2 .fa-youtube{
+  color: #FF0000;
+  font-size: 20px;
+}
+.footer_right2 .fa-users{
+  color: #3498db;
+  font-size: 20px;
+}
+.footer_right2 .fa-blogger{
+  color: #ed7800;
+  font-size: 20px;
+}
+.footer_right2 .fa-github-square{
+  color:white;
+  font-size: 20px;
+}
+/* footer bottom section css
+*******************************/
+.footerbottom {
+    background: black;
+    color: white;
+    padding: 5px;
+    margin-bottom: 0%;
+    padding-bottom: 15px;
+    text-align:center;
+}
+ .bottomtext {
+ color: #70dd80;
+}
+.bottomtext a{
+  color: #eee;
+  text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bottomtext a:hover{
+  color: #08a3eb;
+}
